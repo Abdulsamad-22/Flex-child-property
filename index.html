@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="">
+
+  <style>
+
+    main{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .grow-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .shrink-container{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .grow-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container1{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container2{
+        display: flex;
+        flex-direction: row;
+        max-width: 400px;
+        gap: 0.5rem;
+    }
+
+    .container3{
+        display: flex;
+        flex-direction: row;
+        max-width: 200px;
+        gap: 0.5rem;
+    }
+
+    .item{
+        width: 100px;
+        height: 100px;
+        background-color: burlywood;
+        margin-bottom: 10px;
+    }
+  </style>
+  
+  <title>Flex Children Task</title>
+
+</head>
+<body>
+    <main>
+        <div>
+            <h1>Order Property</h1>
+            <div class="container1">
+                <div class="item" style="order: 3;">Item 2</div>
+                <div class="item"  style="order: 2;">Item 1</div>
+                <div class="item" style="order: 1;">Item 3</div>
+            </div>
+        </div>
+
+            <div class="grow-container">
+                <h1>
+                    Flex Grow
+                </h1>
+                <div class="container2">
+                    <div class="item" style="flex-grow: 2;  flex-basis: 50px">Item 1</div>
+                    <div class="item"  style="flex-grow: 1">Item 2</div>
+                    <div class="item" style="flex-grow: 3;">Item 3</div>
+                </div>
+            </div>
+            
+            <div class="shrink-container">
+                <h1>
+                    Flex Shrink
+                </h1>
+                <div class="container3">
+                    <div class="item" style="flex-shrink: 2;">Item 1</div>
+                    <div class="item"  style="">Item 2</div>
+                    <div class="item" style="">Item 3</div>
+                </div>
+            </div>  
+
+        <div class="Basis-container">
+            <h1>
+                Flex Basis
+            </h1>
+            <div class="container4">
+                <div class="item" style="flex-basis: 50px;">Item 1</div>
+                <div class="item" style="flex-basis: 150px;">Item 2</div>
+                <div class="item" style="">Item 3</div>
+            </div>
+        </div>  
+    </main>
+</body>
+</html>
